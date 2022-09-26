@@ -10,7 +10,7 @@ import {
   errorAndExit,
   projRoot,
   writeJson,
-} from '@element-plus/build-utils'
+} from '@element-plus/node-utils'
 import {
   REPO_BRANCH,
   REPO_NAME,

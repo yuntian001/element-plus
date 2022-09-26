@@ -4,6 +4,9 @@ import VueJsx from '@vitejs/plugin-vue-jsx'
 import VueMacros from 'unplugin-vue-macros/vite'
 
 export default defineConfig({
+  resolve: {
+    conditions: ['dev', 'main', 'module'],
+  },
   plugins: [
     VueMacros({
       setupComponent: false,

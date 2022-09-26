@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { docRoot } from '@element-plus/build-utils'
+import { docRoot } from '@element-plus/node-utils'
 
 export const languages = fs.readdirSync(path.resolve(__dirname, '../crowdin'))
 
