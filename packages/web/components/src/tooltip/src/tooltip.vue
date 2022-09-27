@@ -58,16 +58,7 @@ import {
   unref,
   watch,
 } from 'vue'
-<<<<<<< HEAD:packages/web/components/tooltip/src/tooltip.vue
-import { ElPopper, ElPopperArrow } from '@element-plus/components/popper'
-=======
-import {
-  ElPopper,
-  ElPopperArrow,
-  usePopperArrowProps,
-  usePopperProps,
-} from '@element-plus/components/src/popper'
->>>>>>> 17456222e (refactor(components): move src):packages/web/components/src/tooltip/src/tooltip.vue
+import { ElPopper, ElPopperArrow } from '@element-plus/components/src/popper'
 
 import { debugWarn, isBoolean, isUndefined } from '@element-plus/utils'
 import {

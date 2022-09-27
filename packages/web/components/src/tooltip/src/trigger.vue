@@ -16,29 +16,16 @@
     <slot />
   </el-popper-trigger>
 </template>
-<<<<<<< HEAD:packages/web/components/tooltip/src/trigger.vue
 <script lang="ts" setup>
 import { inject, ref, toRef, unref } from 'vue'
-import { ElPopperTrigger } from '@element-plus/components/popper'
-=======
-
-<script lang="ts">
-import { defineComponent, inject, ref, toRef, unref } from 'vue'
 import { ElPopperTrigger } from '@element-plus/components/src/popper'
->>>>>>> 17456222e (refactor(components): move src):packages/web/components/src/tooltip/src/trigger.vue
 import { composeEventHandlers } from '@element-plus/utils'
 import { useNamespace } from '@element-plus/hooks'
 import { TOOLTIP_INJECTION_KEY } from '@element-plus/tokens'
 import { useTooltipTriggerProps } from './trigger'
 import { whenTrigger } from './utils'
 
-<<<<<<< HEAD:packages/web/components/tooltip/src/trigger.vue
 defineOptions({
-=======
-import type { OnlyChildExpose } from '@element-plus/components/src/slot'
-
-export default defineComponent({
->>>>>>> 17456222e (refactor(components): move src):packages/web/components/src/tooltip/src/trigger.vue
   name: 'ElTooltipTrigger',
 })
 

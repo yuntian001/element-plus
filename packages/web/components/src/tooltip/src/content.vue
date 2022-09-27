@@ -48,12 +48,8 @@
 <script lang="ts" setup>
 import { computed, inject, onBeforeUnmount, ref, unref, watch } from 'vue'
 import { onClickOutside } from '@vueuse/core'
-<<<<<<< HEAD:packages/web/components/tooltip/src/content.vue
-=======
-import { ElPopperContent } from '@element-plus/components/src/popper'
->>>>>>> 17456222e (refactor(components): move src):packages/web/components/src/tooltip/src/content.vue
 import { composeEventHandlers } from '@element-plus/utils'
-import { ElPopperContent } from '@element-plus/components/popper'
+import { ElPopperContent } from '@element-plus/components/src/popper'
 import { TOOLTIP_INJECTION_KEY } from '@element-plus/tokens'
 import { useTooltipContentProps } from './content'
 
