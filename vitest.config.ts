@@ -1,3 +1,4 @@
+import path from 'path'
 import { defineConfig } from 'vitest/config'
 import Vue from '@vitejs/plugin-vue'
 import VueJsx from '@vitejs/plugin-vue-jsx'
@@ -15,7 +16,16 @@ export default defineConfig({
         vue: Vue(),
         vueJsx: VueJsx(),
       },
-    }),
+    }) as any,
+    {
+      resolveId(id) {
+        if (!id.startsWith('@element-plus/components')) return
+        return id.replace(
+          '@element-plus/components/src',
+          path.resolve('packages/web/components/src')
+        )
+      },
+    },
   ],
   optimizeDeps: {
     disabled: true,
